@@ -61,10 +61,6 @@ router.get('/', (req, res, next) => {
       res.redirect('/books');
     }
   }); 
-    /*****************
-     * ADD CODE HERE *
-     *****************/
-
    });  
 
 // GET the Book Details page in order to edit an existing Book
@@ -82,9 +78,6 @@ router.get('/', (req, res, next) => {
       res.render('books/details', {title: 'Edit books', books: books})
     }
   });  
-    /*****************
-     * ADD CODE HERE *
-     *****************/
   }); 
 
 // POST - process the information passed from the details form and update the document
@@ -113,9 +106,6 @@ router.get('/', (req, res, next) => {
   });
 
   });  
-    /*****************
-     * ADD CODE HERE *
-     *****************/
 
 // GET - process the delete by user id
   router.get('/delete/:id', (req, res, next) => {
